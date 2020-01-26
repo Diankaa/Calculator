@@ -1,0 +1,17 @@
+{
+  "name": "calculator-js-master",
+  "version": "1.0.0",
+  "description": "There are three main parts of calculator: the display the keys and the history.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}

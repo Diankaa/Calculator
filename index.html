@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="container-fluid d-flex">
+        <div class="calculator col-lg-9 col-md-8 col-12 p-0">
+            <div class="menu">
+                <nav class="navbar pl-0">
+                    <div id="sidebar" style="font-weight: 500;">
+                        <p class="pl-2 pt-4">Калькулятор</p>
+                        <ul>
+                            <li class="menu_item active">
+                                <img src="img/7.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Стандартний</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/4.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Інженерний</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/11.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Програміст</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/15.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Обчислення дати</a>
+                            </li>
+                        </ul>
+                        <p class="my-1 px-2">Перетворювач</p>
+                        <ul>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/13.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Валюта</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/17.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Об'єм</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/18.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Довжина</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/19.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Вага та маса</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/20.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Температура</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/21.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Енергія</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/22.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Площа</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/23.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Швидкість</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/24.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Час</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/25.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Потужність</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/26.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Дані</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/27.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Тиск</a>
+                            </li>
+                            <li class="menu_item">
+                                &nbsp;<img src="img/28.png" style="vertical-align: -4px;" alt="icon">
+                                <a href="#">Кут</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="document.getElementById('sidebar').classList.toggle('open');"
+                        class="navbar-toggler p-0 mr-3" type="button" data-toggle="collapse" data-target="#menu"
+                        style="outline: none;">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <span class="navbar-text">
+                        Стандартний
+                    </span>
+                </nav>
+            </div>
+            <div class="calculator__display text-right">
+                <div class="col-12 pr-0">
+                    <output id="calc__main-screen"></output>
+                </div>
+                <div class="col-12 pr-0">
+                    <output id="calc__sub-screen">0</output>
+                </div>
+           </div>
+            <div class="calculator__keyboard">
+                <div class="col-sm-5 col-12">
+                    <div class="row">
+                        <button class="sub-btn">MC</button>
+                        <button class="sub-btn">MR</button>
+                        <button class="sub-btn">M+</button>
+                        <button class="sub-btn">M-</button>
+                        <button class="sub-btn">MS</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-func btn__hidden_big" value="%">%</button>
+                    <button class="btn btn-func btn__hidden_big" value="sqrt">&#8730;</button>
+                    <button class="btn btn-func btn__hidden_big" value="sqr">x<sup>2</sup></button>
+                    <button class="btn btn-func btn__hidden_big" value="1/x">¹/x</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-func btn__hidden_small" value="%">%</button>
+                    <button class="btn btn-clear" value="CE">CE</button>
+                    <button class="btn btn-clear" value="C">C</button>
+                    <button class="btn btn-delete"><img src="img/8.png" style="width: 23px;" alt="delete"></button>
+                    <button class="btn btn-operator" value="/">&divide;</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-func btn__hidden_small" value="sqrt">&#8730;</button>
+                    <button class="btn btn-number" value="7">7</button>
+                    <button class="btn btn-number" value="8">8</button>
+                    <button class="btn btn-number" value="9">9</button>
+                    <button class="btn btn-operator" value="*">&times;</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-func btn__hidden_small" value="sqr">x<sup>2</sup></button>
+                    <button class="btn btn-number" value="4">4</button>
+                    <button class="btn btn-number" value="5">5</button>
+                    <button class="btn btn-number" value="6">6</button>
+                    <button class="btn btn-operator" value="-">&#8722;</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-func btn__hidden_small" value="cbrt">x<sup>3</sup></button>
+                    <button class="btn btn-number" value="1">1</button>
+                    <button class="btn btn-number" value="2">2</button>
+                    <button class="btn btn-number" value="3">3</button>
+                    <button class="btn btn-operator" value="+">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-func btn__hidden_small" value="1/x">¹/x</button>
+                    <button class="btn btn-func" value="+-">&plusmn;</button>
+                    <button class="btn btn-number" value="0">0</button>
+                    <button class="btn btn-decimal">.</button>
+                    <button class="btn btn-operator" value="=">=</button>
+                </div>
+            </div>
+        </div>
+        <div class="history col-lg-3 col-md-4 d-none d-md-block">
+            <div class="history__wrapper">
+                <div class="history__titles">
+                    <div class="active journal title">Журнал</div>
+                    <div class="memory title">Пам'ять</div>
+                </div>
+                <div id="history__journal_content">Записів журналу ще немає</div>
+
+
+                <div id="history__memory_content">У пам'яті нічого не збережено</div>
+                <i class="fas fa-trash-alt trash" aria-hidden="true" data-toggle="tooltip" title="Очистити весь журнал"></i>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
