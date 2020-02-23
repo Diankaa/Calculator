@@ -18,9 +18,5 @@ Things that could happen when a person gets hold of a calculator. They can hit:
  -  the clear key
  -  the percent key
  -  the square root key and other.
- - 
-![enter image description here](https://github.com/Diankaa/Calculator/blob/master/img/big.png)
 
-It's as easy to use on a mobile phone as it is on a desktop computer
-
-![enter image description here](https://github.com/Diankaa/Calculator/blob/master/img/small.png)
+Technologies: HTML5, CSS3, JavaScript, Bootstrap4
