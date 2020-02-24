@@ -20,3 +20,5 @@ Things that could happen when a person gets hold of a calculator. They can hit:
  -  the square root key and other.
 
 Technologies: HTML5, CSS3, JavaScript, Bootstrap4
+
+https://diankaa.github.io/calculator/
